@@ -1,23 +1,54 @@
 {
   "publicPath": "",
   "all": [
+    "Bar.bundle.js",
+    "Bar.bundle.js.map",
+    "Foo.bundle.js",
+    "Foo.bundle.js.map",
     "client.bundle.js",
     "client.bundle.js.map"
   ],
   "initial": [
     "client.bundle.js"
   ],
-  "async": [],
+  "async": [
+    "Bar.bundle.js",
+    "Foo.bundle.js"
+  ],
   "modules": {
-    "8a9028ce": [
-      0,
-      1
+    "2e8ce551": [
+      4,
+      5
     ],
     "2875ac91": [
-      0,
-      1
+      4,
+      5
     ],
-    "2e8ce551": [
+    "17e6c763": [
+      4,
+      5
+    ],
+    "a0f5bb34": [
+      4,
+      5
+    ],
+    "7eccbdfd": [
+      4,
+      5
+    ],
+    "5d87418d": [
+      4,
+      5
+    ],
+    "5c814394": [
+      4,
+      5
+    ],
+    "67b68b53": [
+      4,
+      5
+    ],
+    "8a9028ce": [
       0,
       1
     ],
@@ -33,23 +64,15 @@
       0,
       1
     ],
-    "7eccbdfd": [
-      0,
-      1
-    ],
-    "5d87418d": [
-      0,
-      1
-    ],
-    "5c814394": [
-      0,
-      1
-    ],
-    "67b68b53": [
-      0,
-      1
-    ],
     "2f938df2": [
+      0,
+      1
+    ],
+    "0605c240": [
+      2,
+      3
+    ],
+    "1ab3430d": [
       0,
       1
     ]

@@ -25,16 +25,28 @@ const renderer = VueServerRenderer.createBundleRenderer(serverBundle, {
   clientManifest // 通过后端注入前端的js脚本
 })
 
-router.get("/", async ctx => {
+router.get("/(.*)", async ctx => {
   // 客户端 = template + 编译结果 = 组成的html
-  const body = await renderer.renderToString()
-  ctx.body = body
+
+  // 在渲染页面的时候 需要让服务器根据当前路径渲染对应的路由
+  try {
+    const body = await renderer.renderToString({
+      url: ctx.url
+    })
+    ctx.body = body
+  } catch (e) {
+    console.log(e)
+    if (e.code == 404) {
+      ctx.body = "not found"
+    }
+  }
 })
+
+// 优先使用静态服务插件 加载静态资源
+app.use(static(resolve("dist")))
 
 // 路由插件
 app.use(router.routes())
-// 静态服务插件
-app.use(static(resolve("dist")))
 
 // 启动服务 监听端口
 app.listen(3000)

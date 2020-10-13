@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{13:function(n,t,o){"use strict";o.r(t);var e=function(){var n=this.$createElement;return(this._self._c||n)("div",{on:{click:this.onClickHandler}},[this._v("\n  Foo1\n")])};e._withStripped=!0;var i={name:"Foo",data:function(){return{}},methods:{onClickHandler:function(){alert(1)}}},c=o(3),r=Object(c.a)(i,e,[],!1,null,"75a0cb8b",null);r.options.__file="src/component/Foo.vue";t.default=r.exports}}]);
+//# sourceMappingURL=Foo.bundle.js.map

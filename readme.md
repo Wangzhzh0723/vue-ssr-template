@@ -12,3 +12,8 @@
 - `Vue`中仅支持`beforeCreate`和`created`两个生命周期
 
 ![](./ssr.png)
+
+## 服务端渲染特性 `Vue React`
+
+- 首屏通过服务端渲染, 后续切换逻辑还是通过前端路由
+- `WEB API` (`history`) 默认刷新会报`404`

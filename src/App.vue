@@ -1,24 +1,17 @@
 <template>
   <div id="app">
-    App
-    <Foo />
-    <Bar />
+    <router-link to="/foo">foo</router-link>
+    <router-link to="/bar">bar</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Foo from "./component/Foo.vue"
-import Bar from "./component/Bar.vue"
 export default {
   name: "App",
-  components: {
-    Foo,
-    Bar
-  },
   data() {
     return {}
   },
   methods: {}
 }
 </script>
-<style lang="scss" scoped></style>
